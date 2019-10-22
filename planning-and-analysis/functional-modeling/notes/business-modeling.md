@@ -1,6 +1,11 @@
 ### Registeration Process
 
 + Taskee
+- Taskee enters the app 
+- Taskee register the app with his/her Phone Number
+- Taskee is asked for more data like Email, Name, Address 
+- Taskee can also set up password for his/her account
+- Taskee enters the application
 
 ### Login Process
 
