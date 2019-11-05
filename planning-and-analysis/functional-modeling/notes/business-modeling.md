@@ -50,4 +50,4 @@
 + Process of Monitoring the stalled tasks
   1. If a Task is stalled due to a problem between Tasker and Taskee Support should fix it
 + Process of Answering the tickets
-  1. System make Support to answer to the ticket
+  1. System makes Support to answer to tickets and issues
