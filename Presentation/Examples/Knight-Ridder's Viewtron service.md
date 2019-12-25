@@ -1,0 +1,5 @@
+# Knight-Ridder's Viewtron service
++ The Knight-Ridder media giant was right to think that the future of home information delivery would be via computer. Unfortunately, this insight came in the early 1980s, and the computer they had in mind was an expensive dedicated terminal.
+
++ Knight-Ridder launched its Viewtron version of videotex -- the in-home information-retrieval service -- in Florida in 1983 and extended it to other U.S. cities by 1985. The service offered banking, shopping, news and ads delivered over a custom terminal with color graphics capabilities beyond those of the typical PC of the time. But Viewtron never took off: It was meant to be the the "McDonald's of videotex" and at the same time cater to upmarket consumers, according to a Knight-Ridder representative at the time who apparently didn't notice the contradictions in that goal.
++ A Viewtron terminal cost $900 initially (the price was later dropped to $600 in an attempt to stimulate demand); by the time the company made the service available to anyone with a standard PC, videotex's moment had passed.
