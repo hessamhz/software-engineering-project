@@ -1,3 +1,3 @@
-## Wich one do you prefer?
-++dark mode 
-++light mode
+### Wich one do you prefer?
++ dark mode 
++ light mode
