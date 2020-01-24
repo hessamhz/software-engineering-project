@@ -1,7 +1,7 @@
 ## <p dir='rtl' align='right'>طراحی پایگاه داده</p>
 <p dir='rtl' align='right'>جداول مورد نیاز در طراحی این پروژه به شرح زیر میباشند:</p>
 
-## <p dir='rtl' align='right'>User</p>
+## <p dir='rtl' align='right'>_User</p>
 <p dir='rtl' align='right'>در این جدول اطلاعات هر شخص بدون در نظر گرفتن نقش در پایگاه داده ذخیره میشود.</p>
 <p dir='rtl' align='right'>ID [int] : شماره شناسایی هر شخص</p>
 <p dir='rtl' align='right'>first_name [varchar(30)]: نام </p>
@@ -19,13 +19,15 @@
 
 ## <p dir='rtl' align='right'>Tasker</p>
 <p dir='rtl' align='right'>اطلاعات Tasker در این جدول نگه داری میشوند. همانند Supporter این جدول هم ارتباط یک به یک با جدول User دارد.</p>
+<p dir='rtl' align='right'>tasker_num [int] : شماره هر Tasker</p>
 <p dir='rtl' align='right'>ID [int] : کلید خارجی به جدول User</p>
 <p dir='rtl' align='right'>balance [float]: مجموع درامدهای Tasker </p>
 <p dir='rtl' align='right'>rating [int] : امتیازی که به این Tasker از 1 تا 5 داده شده است.</p>
 
 
-## <p dir='rtl' align='right'>Tasker</p>
+## <p dir='rtl' align='right'>Taskee</p>
 <p dir='rtl' align='right'>اطلاعات Taskee با ارتباط یک به یک با جدول User در این جدول ذخیره میشود.</p>
+<p dir='rtl' align='right'>taskee_num [int] : شماره هر Taskee</p>
 <p dir='rtl' align='right'>ID [int] : کلید خارجی به جدول User</p>
 <p dir='rtl' align='right'>balance [float]: مجموع پرداختی های Taskee </p>
 <p dir='rtl' align='right'>rating [int] : امتیازی که به این Taskee از 1 تا 5 داده شده است.</p>
@@ -73,7 +75,7 @@
 <p dir='rtl' align='right'>ممکن است که Tasker و Taskee با قیمت پیشنهاد شده موافق نباشند در این صورت شروع به مذاکره بر روی هزینه نهایی Task میکنند. این مذاکرات در این جدول ثبت میشود.</p>
 <p dir='rtl' align='right'>ID [int] : شماره هر رکورد</p>
 <p dir='rtl' align='right'>date [datetime]: زمان ثبت شدن پیشنهاد </p>
-<p dir='rtl' align='right'>offer [int]: offer مربوطه</p>
+<p dir='rtl' align='right'>offer [int]: شماره offer مربوطه</p>
 <p dir='rtl' align='right'>description [nvarchar(50)] : توضیحات</p>
 <p dir='rtl' align='right'>fee [float]:  هزینه ی پیشنهادی</p>
 
