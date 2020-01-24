@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from rest_framework import views
+from rest_framework.response import Response
 from .serializers import LoginSerializer
+from rest_framework import status
 from django.contrib.auth import login, authenticate, logout, get_user_model
 from rest_framework_simplejwt.tokens import RefreshToken
 
