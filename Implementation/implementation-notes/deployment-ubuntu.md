@@ -6,7 +6,7 @@ This document helps you to deploy the project on ubuntu 18.04
 ```
     sudo apt update
     sudo apt upgrade
-    ````
+````
     
 Install Some dev tools
 ```
