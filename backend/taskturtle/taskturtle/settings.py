@@ -27,14 +27,14 @@ SECRET_KEY = '00_a0jidsgvo9t6-_1(%m01r0!d#sjtk4rp8mv%z4$bp6^1re!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cloudnative.ir', '137.74.64.232']
+ALLOWED_HOSTS = ['cloudnative.ir', '137.74.64.232', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     # Django Apps
-    "jet",
+    # "jet",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
