@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['cloudnative.ir', '137.74.64.232', '127.0.0.1']
 
 INSTALLED_APPS = [
     # Django Apps
+    "corsheaders",
     # "jet",
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,16 +44,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 3rd Party Apps
     "rest_framework",
-    "corsheaders",
     # Our Apps
     "accounts",
     "authentication"
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -159,7 +159,19 @@ SIMPLE_JWT = {
 }
 
 # CORS Config
-CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+    "http://cloudnative.ir",
+    "http://localhost:8080",
+    "http://127.0.0.1:8000"
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://cloudnative.ir",
+    "http://localhost:8080",
+    "http://127.0.0.1:8000"
+]
+
 # CORS_ORIGIN_REGEX_WHITELIST = [r"^(http?://(?:.+\.)?cloudnative\.ir(?::\d{1,5})?)$", "localhost"]
 
 # CORS_URLS_REGEX = r"^/api/.*$"
