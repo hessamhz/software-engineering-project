@@ -89,7 +89,7 @@ mkvirtualenv --python=/usr/bin/python3 venv
 # Install Django
 ```
 pip install django djangorestframework gunicorn
-
+```
 # Configing gunicorn
 create file /etc/systemd/system/gunicorn.socket
 ```
