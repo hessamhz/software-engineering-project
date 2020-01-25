@@ -159,18 +159,18 @@ SIMPLE_JWT = {
 }
 
 # CORS Config
-# CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = [
-    "http://cloudnative.ir",
-    "http://localhost:8080",
-    "http://127.0.0.1:8000"
-]
+CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_WHITELIST = [
+#     "http://cloudnative.ir",
+#     "http://localhost:8080",
+#     "http://127.0.0.1:8000"
+# ]
 
-CSRF_TRUSTED_ORIGINS = [
-    "http://cloudnative.ir",
-    "http://localhost:8080",
-    "http://127.0.0.1:8000"
-]
+# CSRF_TRUSTED_ORIGINS = [
+#     "http://cloudnative.ir",
+#     "http://localhost:8080",
+#     "http://127.0.0.1:8000"
+# ]
 
 # CORS_ORIGIN_REGEX_WHITELIST = [r"^(http?://(?:.+\.)?cloudnative\.ir(?::\d{1,5})?)$", "localhost"]
 
