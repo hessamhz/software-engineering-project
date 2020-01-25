@@ -158,4 +158,13 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_LIFETIME": timedelta(days=365),
 }
 
-CORS_ORIGIN_ALLOW_ALL = True
+# CORS Config
+
+CORS_ORIGIN_REGEX_WHITELIST = [r"^(http?://(?:.+\.)?cloudnative\.ir(?::\d{1,5})?)$"]
+
+CORS_URLS_REGEX = r"^/api/.*$"
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_REPLACE_HTTPS_REFERER = True
+CSRF_TRUSTED_ORIGINS = [".cloudnative.ir"]
+CSRF_COOKIE_DOMAIN = ".cloudnative.ir"
