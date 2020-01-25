@@ -52,9 +52,9 @@
 <p dir='rtl' align='right'> catagory [int] : دسته مربوطه</p>
 <p dir='rtl' align='right'> final_offer [float] : هزینه توافقی</p>
 <p dir='rtl' align='right'> is_started [int] : در صورت شروع شدن Task یک میشود</p>
-<p dir='rtl' align='right'> is_stalled [int] : در صورتی که کار انجام نشده و منتظر پذیرش Tasker است این فیلد یک میشود.</p>
+<p dir='rtl' align='right'> is_stalled [int] : زمانی که برای task به supporter تیکت زده میشود، این مقدار یک میشود.</p>
 <p dir='rtl' align='right'> is_finished [int] : در صورت تمام شدن Task یک میشود</p>
-<p dir='rtl' align='right'> is_extended [int] : در صورتی که کار از طرفTaskee تغییر کند این مقدار یک میشود.</p>
+<p dir='rtl' align='right'> is_extended [int] : در صورتی که Taskee زمان کار را تغییر دهد، این مقدار یک میشود.</p>
 <p dir='rtl' align='right'> is_cancelled [int] : در صورتی که از طرف هر یک از طرفین Task لغو شود، یک میشود</p>
 
 
@@ -68,7 +68,7 @@
 <p dir='rtl' align='right'> Tasker [int] : شماره Tasker مربوطه</p>
 <p dir='rtl' align='right'> is_rejected [int] : در صورتی که Taskee پیشنهاد Tasker را نپذیرد، این مقدار یک میشود.</p>
 <p dir='rtl' align='right'> is_counted [int] : در صورتی که طرفین در حال مذاکره بر روی قیمت باشند این مقدار یک میشود</p>
-<p dir='rtl' align='right'> is_pending [int] : در صورتی که offer مقدار نهایی نکرفته باشد این مقدار یک میشود.</p>
+<p dir='rtl' align='right'> is_pending [int] : در صورتی که Offer منتظر تایید از طرف مقابل باشد این مقدار یک میشود.</p>
 <p dir='rtl' align='right'> is_cancelled [int] : در صورتی که offer لغو شود این مقدار یک میشود. </p>
 
 ## <p dir='rtl' align='right'>Counter_Offer</p>
