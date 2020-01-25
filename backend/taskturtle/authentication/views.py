@@ -1,10 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from rest_framework import views
 from rest_framework.response import Response
 from .serializers import LoginSerializer
 from rest_framework import status
 from django.contrib.auth import login, authenticate, logout, get_user_model
 from rest_framework_simplejwt.tokens import RefreshToken
+
+
+def is_logged_in(request):
+    return HttpResponse(request.user.is_authenticated)
 
 
 class LoginViewSet(views.APIView):
@@ -19,7 +23,7 @@ class LoginViewSet(views.APIView):
 
         if serializer.is_valid():
             user = authenticate(
-                username=serializer.data["email"], password=serializer.data["password"]
+                username=serializer.data["username"], password=serializer.data["password"]
             )
 
             if user is not None:
@@ -44,3 +48,11 @@ class LoginViewSet(views.APIView):
                 )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
+class LogoutViewSet(views.APIView):
+    permission_classes = []
+
+    def post(self, request, format=None):
+        # simply delete the token to force a login
+        logout(request)
+        return Response(status=status.HTTP_200_OK)
