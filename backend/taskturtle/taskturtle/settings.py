@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ['cloudnative.ir', '137.74.64.232', '127.0.0.1']
 INSTALLED_APPS = [
     # Django Apps
     "corsheaders",
-    # "jet",
+    "jet",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
