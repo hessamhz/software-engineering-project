@@ -6,7 +6,7 @@ import Login from "./components/login"
 import Eachtask from "./components/eachtask"
 const routes = [
     {path: '/hello', component: HelloWorld},
-    {path:'/', component: Taskee},
+    {path:'/home', component: Taskee},
     {path:'/task', component: Task},
     {path:'/home', component: Home},
     {path:'/login', component: Login},

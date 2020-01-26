@@ -22,14 +22,15 @@ export const store = new Vuex.Store({
                 tasksubcategory: 'none',
                 taskrecommondedprice: '81.56$/h',
                 taskregion: 'Molestias',
-                taskcreationdate: '2019/02/01',
+                taskcreationdate: '2019-02-01',
                 taskenddate: 'In progress',
-                taskstatus: 'Waiting for offer',
+                taskstatus: 'Task is defined',
                 taskdescription: 'Aliquam tincidunt mauris eu risus...',
                 taskaction: '',
                 taskinfo: '',
                 e1 : 1,
                 taskid: 1,
+                taskprogress: 0,
             },
         ],
     },
@@ -59,6 +60,15 @@ export const store = new Vuex.Store({
             console.log("in update status");
             console.log(taskid);
             state.tasks[taskid - 1].e1 = status;
+            if(state.tasks[taskid - 1].e1 === 2){
+                state.tasks[taskid - 1].taskstatus = "accepted an offer";
+            }else if(state.tasks[taskid - 1].e1 === 3){
+                state.tasks[taskid - 1].taskstatus = "Paid";
+                state.tasks[taskid - 1].taskrecommondedprice = '1000$';
+            }else if (state.tasks[taskid - 1].e1 === 4){
+                state.tasks[taskid - 1].taskstatus = "task is done";
+                state.tasks[taskid - 1].taskenddate =  state.tasks[taskid - 1].taskcreationdate;
+            }
             console.log("in update status");
             console.log(state.tasks[taskid - 1].e1);
             console.log(status);
@@ -67,7 +77,8 @@ export const store = new Vuex.Store({
             state.activateaddtask = active;
             console.log("in store");
             console.log(state.activateaddtask);
-        }
+        },
+
     }
 
 });

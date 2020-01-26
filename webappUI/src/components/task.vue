@@ -171,6 +171,7 @@
                 taskname: '',
                 taskregion: '',
                 taskrecommendedprice: '',
+                taskprogress: '',
                 taskcategory: '',
                 taskcreationdate: '',
                 taskenddate: '',
@@ -190,7 +191,7 @@
                 var len = this.$store.state.tasks.length + 1;
                 task = { taskname: this.taskname, taskcategory: this.taskcategory, tasksubcategory: this.subcategory,
                     taskrecommondedprice: this.taskrecommondedprice , taskregion: this.taskregion , taskcreationdate: this.taskcreationdate, taskenddate: this.taskenddate, taskstatus: this.taskstatus ,
-                    taskdescription: this.taskdescription, taskaction: "", taskinfo: '', e1: 1, taskid: len,
+                    taskdescription: this.taskdescription, taskaction: "", taskinfo: '', e1: 1, taskid: len, taskprogress: 0,
                 };
 
                 this.$store.commit('addTask', task);

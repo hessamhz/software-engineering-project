@@ -18,7 +18,7 @@ Vue.use(Vuetify);
 Vue.use(VueRouter);
 
 const base = axios.create({
-  baseURL: 'https://cloudnative.ir/api/'
+  baseURL: 'http://cloudnative.ir/api/'
 });
 Vue.prototype.$http = base;
 

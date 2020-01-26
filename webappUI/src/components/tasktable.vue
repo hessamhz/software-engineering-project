@@ -3,7 +3,7 @@
         <v-card-title>
             Tasks
             <v-spacer></v-spacer>
-            <v-btn text icon><v-icon color="#7cfc00" @click="activetaskadd()">mdi-plus-thick</v-icon></v-btn>
+            <v-btn text icon><v-icon color="#7cfc00" @click="$vuetify.goTo(500)">mdi-plus-thick</v-icon></v-btn>
             <small>add task</small>
         </v-card-title>
         <v-data-table
@@ -26,6 +26,7 @@
                 </v-btn>
             </template>
         </v-data-table>
+        <v-container id = 'taskdefin'></v-container>
 
     </v-card>
 </template>
