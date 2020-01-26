@@ -48,6 +48,9 @@ class LoginViewSet(views.APIView):
                 )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+    def get(self, request):
+        return Response("No Cors Problem", status=status.HTTP_200_OK)
+
 
 class LogoutViewSet(views.APIView):
     permission_classes = []
